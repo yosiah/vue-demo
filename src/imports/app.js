@@ -14,6 +14,12 @@ import App from './ui/App.vue'
 import routes from './routes'
 import storeOptions from './store'
 
+import ElementUI from 'element-ui'
+//import '/css/element-ui/theme-chalk/index.css'
+//=> <link href="/css/element-ui/theme-chalk/index.css" rel="stylesheet">
+
+Vue.use(ElementUI)
+
 function createApp (context) {
   const router = new VueRouter({
     mode: 'history',
